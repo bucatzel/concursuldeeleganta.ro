@@ -344,14 +344,14 @@ audio, video {
 	margin-bottom: 40px;
 }
 .project_fact_inline{
-	padding: 55px 0px 40px 0px; background: #a2732d; 
+	padding: 55px 0px 40px 0px; background: #195D10; 
 }
 .kode-next-match-stat{float:left;width:100%; padding: 30px 0px 18px 0px; margin-bottom: 40px;}
 .margin-bottom-40{
 	margin-bottom:40px;
 }
 .kode-modern-expert-blogger{
-	background: url(../images/parallax.jpg); padding: 25px 0px 40px 0px; background-size: cover; margin-bottom: 0; background-attachment:fixed;
+	background: url(../extra-images/bg-football-para.jpg); padding: 25px 0px 40px 0px; background-size: cover; margin-bottom: 40px;
 }
 .kode-matches-gallery{
 	padding: 10px 0px 50px 0px;
@@ -459,7 +459,3 @@ audio, video {
 .skill-bg-4{
 	background-color:#1eaace;
 }
-
-.kode-wrap-boxed .eccaption{top:40%;}
-.kode-wrap-boxed .main-content{background:#fff;}
-.kode-wrap-boxed {background:#fff;width: 1200px; margin: 0 auto; margin-top: 40px; margin-bottom: 40px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);position:relative;}
