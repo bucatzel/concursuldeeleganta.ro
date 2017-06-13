@@ -1,0 +1,132 @@
+.kode-content .widget {
+	width: 100%; margin-bottom: 30px; float: left;
+}
+.widget ul li {
+	list-style: none;
+}
+.tab-widget {
+	border: 1px solid rgb(224, 224, 224); border-image: none; float: left; box-shadow: 0px 2px 0px 0px #000, inset 0px 2px 0px 0px #000;
+}
+.widget-tabnav {
+	width: 100%; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.widget-tabnav li {
+	list-style: none; margin-left: 10px; display: inline-block;
+}
+.widget-tabnav li a {
+	padding: 13px 12px; color: rgb(92, 92, 92); font-size: 18px; display: inline-block; position: relative;
+}
+.widget-tabnav li a::before {
+	left: 0px; width: 100%; height: 0px; bottom: -4px; position: absolute; content: ""; opacity: 0;
+}
+.widget-tabnav li:hover a::before {
+	height: 4px; opacity: 1;
+}
+.widget-tabnav li.active a::before {
+	height: 4px; opacity: 1;
+}
+.match-widget {
+	margin: 0px; padding: 0px 14px; width: 100%; float: left;
+}
+.match-widget li {
+	list-style: none; padding: 18px 0px; width: 100%; border-bottom-color: rgb(224, 224, 224); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.match-widget li:last-child {
+	border-bottom-color: currentColor; border-bottom-width: medium; border-bottom-style: none;
+}
+.kode-cell {
+	margin: 0px -4px 0px 0px; width: 33.33%; text-align: center; vertical-align: middle; display: inline-block;
+}
+.kode-cell small {
+	line-height: 1; font-size: 14px; margin-top: 8px; display: block;
+}
+.kode-vs {
+	padding: 4px 0px 0px; border: 1px solid rgb(220, 220, 220); border-image: none; width: 32px; height: 25px; color: rgb(255, 255, 255); line-height: 1; display: inline-block; background-color: rgb(42, 42, 42);
+}
+.kode-recent-blog ul li figure {
+	width: 100%; float: left;
+}
+.kode-recent-blog > ul > li {
+	list-style: none; margin: 0px 0px 20px; padding: 0px 0px 11px; width: 100%; border-bottom-color: rgb(222, 222, 222); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.kode-recent-blog > ul > li:last-child {
+	padding: 0px; border: currentColor; border-image: none; margin-bottom: 0px;
+}
+.kode-recent-blog > ul > li:hover img {
+	opacity: 0.6;
+}
+.kode-recent-thumb {
+	float: right;
+}
+.kode-recent-thumb ~ figcaption {
+	padding: 0px 108px 0px 0px;
+}
+.kode-recent-blog figcaption ul {
+	margin: 0px; display: inline-block;
+}
+.kode-recent-blog figcaption ul li {
+	padding: 0px 10px; color: rgb(102, 102, 102); line-height: 1; border-left-color: rgb(145, 145, 145); border-left-width: 1px; border-left-style: solid; display: inline-block;
+}
+.kode-recent-blog figcaption ul li:first-child {
+	border: currentColor; border-image: none; padding-left: 0px;
+}
+.kode-recent-blog figcaption ul li:last-child {
+	padding-right: 0px;
+}
+.widget-recent-news .medium-title h6 {
+	margin: 0px;
+}
+.widget-recent-news .medium-title h6 a {
+	color: rgb(102, 102, 102); text-transform: uppercase;
+}
+.widget-recent-news .medium-info time {
+	padding: 17px 0px 0px; border: 3px solid rgb(51, 51, 51); border-image: none; height: 70px; color: rgb(255, 255, 255); background-color: rgb(51, 51, 51);
+}
+.widget-recent-news .kode-blog-options li a {
+	color: rgb(102, 102, 102);
+}
+.widget_categories ul li {
+	padding: 3px 0px; width: 100%; text-align: right; border-bottom-color: rgb(222, 222, 222); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.widget_categories ul li a {
+	color: rgb(102, 102, 102); float: left;
+}
+.widget_categories ul li a::before {
+	color: rgb(102, 102, 102); font-family: FontAwesome; margin-right: 14px; float: left; content: "\f101";
+}
+.twitter-info {
+	padding: 20px 15px; border: 1px solid rgb(231, 231, 231); border-image: none; width: 100%; float: left;
+}
+.twitter-info i {
+	margin: -21px 0px 0px; color: rgb(85, 172, 238); font-size: 22px; float: right;
+}
+.kode-twitter-widget ul {
+	border-width: medium 1px 1px; border-style: none solid solid; border-color: currentColor rgb(231, 231, 231) rgb(231, 231, 231); border-image: none; width: 100%; height: 240px; float: left; -ms-overflow-x: hidden;
+}
+.kode-twitter-widget ul li {
+	padding: 14px 14px 14px 12px; width: 100%; border-bottom-color: rgb(238, 238, 238); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.tweet-thumb {
+	padding: 6px 0px 0px; width: 40px; float: left;
+}
+.tweet-thumb ~ .tweet-list {
+	padding: 0px 0px 0px 52px;
+}
+.tweet-list a {
+	color: rgb(89, 89, 89); line-height: 18px; float: left;
+}
+.tweet-list span {
+	color: rgb(148, 148, 148); display: block;
+}
+.widget-gallery ul li a {
+	width: 100%; float: left;
+}
+.widget-gallery ul li a img {
+	width: 100%; float: left;
+}
+.widget-gallery ul li:hover a img {
+	opacity: 0.6;
+}
+.widget-gallery ul li {
+	padding: 0px 15px 15px 0px; width: 33.33%; float: left;
+}

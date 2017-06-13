@@ -1,0 +1,1909 @@
+@import url( css/shortcode.css );
+* {
+	margin: 0px; padding: 0px;
+}
+.pull-left {
+	display: none;
+}
+.kode-topbar {
+	width: 100%; font-size: 13px; float: left; display: none; position: relative; background-color: rgb(162, 115, 45);
+}
+.kode-topbar .bx-has-controls-direction.bx-controls {
+	display: none;
+}
+.kode-topbar::before {
+	top: 0px; width: 50%; height: 100%; right: 0px; position: absolute; content: ""; background-color: rgb(241, 215, 178);
+}
+.kode-topbar::after {
+	top: 0px; right: 50%; border-bottom-color: rgb(241, 215, 178); border-left-color: transparent; border-bottom-width: 39px; border-left-width: 30px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+.kode-topbar a {
+	color: rgb(255, 255, 255);
+}
+.kode-topbar p {
+	color: rgb(255, 255, 255);
+}
+.kode-topbar i {
+	color: rgb(255, 255, 255);
+}
+.kode-topbar span {
+	color: rgb(255, 255, 255);
+}
+.kode-barinfo {
+	padding: 5px 16px; height: 30px; overflow: hidden; float: left;
+}
+.kode_bg_white .bx-wrapper .bx-viewport {
+	background: none;
+}
+.kode_bg_white strong {
+	color: rgb(255, 255, 255);
+}
+.kode-userinfo {
+	float: right;
+}
+.kode-userinfo li {
+	list-style: none; padding: 6px 11px 5px 15px; border-left-color: rgba(255, 255, 255, 0.4); border-left-width: 1px; border-left-style: solid; display: inline-block; position: relative;
+}
+.kode-userinfo li i {
+	margin-right: 4px;
+}
+.kode-header-absolute {
+	left: 0px; top: 0px; width: 100%; position: absolute; z-index: 999;
+}
+.kd-headbar {
+	width: 100%; border-bottom-color: currentColor; border-bottom-width: 3px; border-bottom-style: solid; float: left; background-color: rgb(51, 51, 51);
+}
+.logo {
+	margin: 25px 0px 25px 25px; float: left;
+}
+.kd-headbar .logo {
+	transition:0.3s ease-in-out;
+}
+.kf_sticky .kd-headbar .logo {
+	margin: 10px 0px 10px 10px;
+}
+.kf_sticky .navbar-nav > li > a {
+	padding: 27px 14px;
+}
+.kf_sticky .kode-search {
+	margin: 21px -14px 0px 0px;
+}
+.kode-rightsection {
+	float: right;
+}
+.navbar-default {
+	background: none; margin: 0px; border: currentColor; border-image: none; float: left; display: none;
+}
+.navbar-default .navbar-nav li {
+	list-style: none;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: rgb(235, 26, 26);
+}
+.navbar-default .navbar-nav > li > a:focus {
+	color: rgb(235, 26, 26);
+}
+.navbar-nav > li:first-child > a {
+	padding-left: 0px;
+}
+.navbar-nav > li > a {
+	padding: 42px 14px; color: rgb(255, 255, 255); text-transform: uppercase; overflow: hidden; font-size: 14px; font-weight: bold; position: relative;
+}
+.navbar-nav > li > a::before {
+	margin: 0px 0px -8px -12px; padding: 0px 0px 0px 5px; border-radius: 40px 40px 0px 0px; left: 50%; width: 18px; height: 9px; bottom: 0px; color: rgb(255, 255, 255); line-height: 9px; font-family: FontAwesome; font-size: 9px; position: absolute; z-index: 4; content: "\f106";
+}
+.navbar-nav > li > a::after {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(235, 26, 26) rgb(235, 26, 26) currentColor; margin: 0px 0px -8px -15px; border-radius: 40px 40px 0px 0px; border-image: none; left: 50%; width: 24px; height: 12px; bottom: 1px; position: absolute; z-index: 0; content: "";
+}
+.navbar-nav > li > a::before {
+	opacity: 0;
+}
+.navbar-nav > li > a::after {
+	opacity: 0;
+}
+.navbar-nav > li:hover > a::before {
+	margin-bottom: 0px; opacity: 1;
+}
+.navbar-nav > li:hover > a::after {
+	margin-bottom: 0px; opacity: 1;
+}
+.navbar-nav .children {
+	margin: 0px 0px 0px -50px; transition:0.4s ease-in-out; left: 0px; top: 100%; border-top-color: currentColor; border-top-width: 1px; border-top-style: solid; visibility: hidden; position: absolute; z-index: 999; opacity: 0; transform: translateX(30px); background-color: rgb(51, 51, 51); -webkit-transition: all 0.4s ease-in-out; -o-transition: all 0.4s ease-in-out; -webkit-transform: translateX(30px); -o-transform: translateX(30px); -moz-transition: all 0.4s ease-in-out; -moz-transform: translateX(30px);
+}
+.navbar-nav > li:hover > .children {
+	visibility: visible; opacity: 1; transform: translateX(0px); -webkit-transform: translateX(0px); -o-transform: translateX(0px); -moz-transform: translateX(0px);
+}
+.navbar-nav .children > li:hover > .children {
+	visibility: visible; opacity: 1; transform: translateX(0px); -webkit-transform: translateX(0px); -o-transform: translateX(0px); -moz-transform: translateX(0px);
+}
+.navbar-nav .children li {
+	width: 100%; float: left; position: relative;
+}
+.navbar-nav .children li a {
+	padding: 7px 15px; width: 195px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 12px; border-bottom-color: rgb(62, 62, 62); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.navbar-nav .children li a::before {
+	padding: 0px 14px 0px 0px; font-family: FontAwesome; display: inline-block; content: "\f105";
+}
+.navbar-nav .children .children {
+	margin: 0px; left: 100%; top: 0px;
+}
+.navbar-nav .children > li:hover > a {
+	color: rgb(255, 255, 255);
+}
+.children > li:hover > a::before {
+	color: rgb(255, 255, 255);
+}
+.kode-header-two .kode-search::before {
+	display: none;
+}
+.kode-header-two .kode-search::after {
+	display: none;
+}
+.kode-header-three .kd-headbar {
+	background: none; border: currentColor; border-image: none;
+}
+.kode-header-three .navbar-nav > li > a::after {
+	display: none;
+}
+.kode-header-three .navbar-nav > li > a::before {
+	background: none; margin: 0px; left: 0px; width: 100%; bottom: 30px; border-bottom-color: rgb(0, 0, 0); border-bottom-width: 2px; border-bottom-style: solid; content: "";
+}
+.kode-cart {
+	padding: 29px 0px 0px; float: right;
+}
+.kode-cart a {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-cart a i {
+	padding: 13px 0px 0px; border-radius: 100%; width: 42px; height: 42px; text-align: center; color: rgb(0, 0, 0); margin-right: 12px;
+}
+.modal-dialog {
+	width: 400px;
+}
+.modal-content {
+	border-radius: 0px;
+}
+.modal-body {
+	padding: 15px 22px 4px; width: 100%; display: inline-block;
+}
+.modal-header h4 {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-loginform {
+	width: 100%; display: inline-block;
+}
+.kode-loginform p {
+	width: 100%; display: inline-block;
+}
+.kode-loginform p > span {
+	color: rgb(51, 51, 51); font-size: 14px; font-weight: bold; margin-bottom: 6px; display: block;
+}
+.kode-loginform p input[type='text'] {
+	border: 1px solid rgb(226, 226, 226); border-image: none; width: 100%; height: 42px; float: left;
+}
+.kode-loginform p input[type='password'] {
+	border: 1px solid rgb(226, 226, 226); border-image: none; width: 100%; height: 42px; float: left;
+}
+.kode-loginform p label {
+	margin: 0px; float: left;
+}
+.kode-loginform p input[type='checkbox'] {
+	margin: 7px 10px 0px 0px; float: left;
+}
+.kode-loginform p label span {
+	color: rgb(51, 51, 51); font-size: 14px; font-weight: bold;
+}
+.kode-loginform p a {
+	color: rgb(51, 51, 51); font-size: 14px; font-weight: bold;
+}
+.kode-loginform p a {
+	margin: 14px 0px 0px; float: left;
+}
+.kode-loginform p.kode-submit {
+	padding: 18px 0px 0px; border-top-color: rgb(223, 223, 223); border-top-width: 1px; border-top-style: solid;
+}
+.kode-loginform p input[type='submit'] {
+	padding: 5px 30px; border: 7px solid currentColor; border-image: none; color: rgb(0, 0, 0); text-transform: uppercase; font-weight: bold; float: right; box-shadow: inset 0px 0px 0px 1px #000;
+}
+.close {
+	opacity: 0.4;
+}
+.kode-search {
+	margin: 36px -14px 0px 0px; width: 160px; float: right; position: relative;
+}
+.kode-search::before {
+	top: -14px; right: 0px; border-right-color: transparent; border-bottom-color: rgb(0, 0, 0); border-right-width: 14px; border-bottom-width: 14px; border-right-style: solid; border-bottom-style: solid; position: absolute; content: "";
+}
+.kode-search::after {
+	right: 0px; bottom: -14px; border-top-color: rgb(0, 0, 0); border-right-color: transparent; border-top-width: 14px; border-right-width: 14px; border-top-style: solid; border-right-style: solid; position: absolute; content: "";
+}
+.kode-search input[type='text'] {
+	padding: 6px 15px; border: currentColor; border-image: none; width: 100%; height: 29px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 12px; float: left; box-shadow: none;
+}
+#mainbanner {
+	width: 100%; float: left;
+}
+#mainbanner .flex-direction-nav {
+	display: none;
+}
+#mainbanner .container {
+	position: relative;
+}
+.flexslider .slides .kode-caption img {
+	width: auto; margin-bottom: 16px; display: inline-block;
+}
+.kode-caption {
+	margin: auto; left: 0px; width: 100%; text-align: center; right: 0px; bottom: 130px; position: absolute; z-index: 999;
+}
+.kode-caption h2 {
+	padding: 10px 30px; color: rgb(0, 0, 0); text-transform: uppercase; font-size: 50px; margin-bottom: 40px; display: inline-block; position: relative; box-shadow: 0px 30px 20px 0px rgba(0,0,0,0.5); background-color: rgb(255, 0, 0); -webkit-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 30px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.kode-caption p {
+	line-height: normal; font-size: 20px;
+}
+.kode-caption h2::before {
+	left: -50px; top: 0px; border-bottom-color: rgb(255, 0, 0); border-left-color: transparent; border-bottom-width: 95px; border-left-width: 50px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+.kode-caption h2::after {
+	top: 0px; right: -50px; border-right-color: transparent; border-bottom-color: rgb(255, 0, 0); border-right-width: 50px; border-bottom-width: 95px; border-right-style: solid; border-bottom-style: solid; position: absolute; content: "";
+}
+.kode-caption p {
+	width: 70%; color: rgb(255, 255, 255); margin-bottom: 25px; display: inline-block;
+}
+.kode-modren-btn {
+	padding: 6px 35px; border: 7px solid rgb(255, 227, 37); border-image: none; color: rgb(51, 51, 51); text-transform: uppercase; font-size: 20px; display: inline-block; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+}
+.kode-modren-btn:hover {
+	opacity: 0.7;
+}
+.kode-content .kode-parallax.kode-pagesection {
+	background-attachment: fixed !important;
+}
+.kode-dark-overlay {
+	position: relative;
+}
+.kode-dark-overlay::before {
+	background: rgb(0, 0, 0); left: 0px; top: 0px; width: 100%; height: 100%; bottom: 0px; position: absolute; content: ""; opacity: 0.6;
+}
+.kode-content {
+	padding: 40px 0px 0px; width: 100%; float: left;
+}
+.kode-call-action {
+	width: 100%; text-align: right; float: left;
+}
+.kode-call-action .kode-simplebtn {
+	float: right;
+}
+.kode-simplebtn {
+	margin: 10px 0px 0px; padding: 12px 40px; border: 1px solid rgb(255, 255, 255); border-image: none; color: rgb(255, 255, 255); font-size: 18px; display: inline-block; position: relative;
+}
+.kode-simplebtn::before {
+	left: 0px; top: 0px; width: 100%; height: 0px; position: absolute; content: ""; background-color: rgba(0, 0, 0, 0.1);
+}
+.kode-simplebtn:hover::before {
+	height: 100%;
+}
+.kode-simplebtn ~ .kode-action-info {
+	padding: 0px 220px 0px 0px;
+}
+.kode-action-info h2 {
+	text-transform: uppercase;
+}
+.kode-action-info h2 {
+	color: rgb(255, 255, 255);
+}
+.kode-action-info span {
+	color: rgb(255, 255, 255);
+}
+.kode-action-info span {
+	text-transform: uppercase; font-size: 16px;
+}
+.kode-section-title {
+	width: 100%; margin-bottom: 30px; float: left;
+}
+.kode-widget-title {
+	width: 100%; margin-bottom: 18px; float: left;
+}
+.kode-section-title h2 {
+	padding: 0px 0px 7px; text-transform: uppercase; border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+.kode-widget-title h2 {
+	padding: 0px 0px 7px; text-transform: uppercase; border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+.widget-recent-news ul li:hover time {
+	color: rgb(255, 255, 255);
+}
+.kode-white.kode-section-title h2 {
+	color: rgb(255, 255, 255) !important; border-bottom-color: rgb(255, 255, 255) !important;
+}
+.heading-12.kode-white p {
+	color: rgb(255, 255, 255) !important;
+}
+.heading-12.kode-white h2 {
+	color: rgb(255, 255, 255) !important;
+}
+.shape-view .kode-section-title {
+	margin-bottom: 90px;
+}
+.kode-result-list article {
+	padding: 25px 20px; width: 100%; margin-bottom: 30px; float: left; position: relative; min-height: 191px; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); background-color: rgb(51, 51, 51); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-result-list article::before {
+	top: -46px; right: 0px; border-top-color: rgb(235, 26, 26); border-left-color: transparent; border-top-width: 237px; border-left-width: 237px; border-top-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+.kode-result-list article::after {
+	border-radius: 100%; top: 24px; width: 130px; height: 130px; right: 31px; position: absolute; content: ""; background-color: rgb(51, 51, 51);
+}
+.kode-result-info h2 {
+	padding: 0px 0px 12px; width: 100%; text-transform: uppercase; border-bottom-color: rgb(157, 157, 157); border-bottom-width: 1px; border-bottom-style: solid; display: inline-block;
+}
+.kode-result-info h2 a {
+	color: rgb(255, 255, 255); display: inline-block;
+}
+.kode-result-info h2 span {
+	color: rgb(255, 255, 255); float: right;
+}
+.kode-result-info ul li {
+	list-style: none; width: 100%; color: rgb(255, 255, 255); float: left;
+}
+.kode-result-info ul li span {
+	float: right;
+}
+.kode-result-thumb ~ .kode-result-info {
+	padding: 0px 200px 0px 0px;
+}
+.kode-result-thumb {
+	padding: 10px 20px 0px 0px; float: right; position: relative; z-index: 9;
+}
+.kode-result-count {
+	padding: 5px 0px 0px; top: -70px; width: 75px; height: 75px; text-align: center; right: 20px; color: rgb(51, 51, 51); font-size: 45px; font-weight: bold; position: absolute;
+}
+.kode-result-count::before {
+	left: -7px; top: 0px; border-bottom-color: rgb(201, 176, 5); border-left-color: transparent; border-bottom-width: 24px; border-left-width: 7px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+.kode-result-list article.kode-even::before {
+	left: 0px; right: auto; transform: scaleX(-1); -webkit-transform: scaleX(-1); -o-transform: scaleX(-1); -moz-transform: scaleX(-1);
+}
+.kode-result-list article.kode-even .kode-result-thumb ~ .kode-result-info {
+	padding: 0px 0px 0px 200px;
+}
+.kode-result-list article.kode-even .kode-result-thumb {
+	padding: 1px 0px 0px 21px; float: left;
+}
+.kode-result-list article.kode-even::after {
+	left: 31px; right: auto;
+}
+.kode-result-list article.kode-even .kode-result-count {
+	left: 20px; right: auto;
+}
+.kode-result-count::before {
+	left: auto; right: -7px; transform: scaleX(-1); -webkit-transform: scaleX(-1); -o-transform: scaleX(-1); -moz-transform: scaleX(-1);
+}
+.kode-shop-list ul li {
+	list-style: none;
+}
+.kode-pro-inner {
+	padding: 5px; border: 1px solid rgb(134, 134, 134); border-image: none; width: 100%; margin-bottom: 30px; float: left; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-shop-list figure {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-shop-list figure a {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-shop-list figure img {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-shop-list figure figcaption {
+	padding: 16px; width: 100%; float: left; background-color: rgb(255, 255, 255);
+}
+.kode-shop-list figure figcaption h4 {
+	text-transform: uppercase;
+}
+.kode-pro-info {
+	padding: 10px 16px 8px; width: 100%; float: left; background-color: rgb(55, 55, 55);
+}
+.add_to_cart {
+	color: rgb(255, 255, 255); text-transform: uppercase; display: inline-block;
+}
+.add_to_cart i {
+	margin-right: 8px;
+}
+.kode-pro-info span {
+	color: rgb(255, 255, 255); font-weight: bold; float: right;
+}
+.kode-pro-inner:hover .kode-pro-info a {
+	color: rgb(0, 0, 0);
+}
+.kode-pro-inner:hover .kode-pro-info span {
+	color: rgb(0, 0, 0);
+}
+.kode-team-list > ul > li {
+	list-style: none; margin-bottom: 30px;
+}
+.kode-team-list figure {
+	margin-bottom: 20px;
+}
+.kode-team-list figure {
+	width: 100%; float: left; background-color: rgb(255, 255, 255);
+}
+.kode-team-list figure img {
+	width: 100%; float: left; background-color: rgb(255, 255, 255);
+}
+.kode-team-thumb {
+	border: 1px solid rgb(216, 216, 216); border-image: none; width: 248px; float: left; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-team-list figure figcaption {
+	right: 0px; bottom: 0px; position: absolute; z-index: 10;
+}
+.kode-team-list figure figcaption::before {
+	left: 0px; top: 0px; width: 116px; height: 100%; position: absolute; content: "";
+}
+.kode-team-network {
+	margin-bottom: 15px; float: right;
+}
+.kode-team-network li {
+	list-style: none; margin-left: 3px; display: inline-block;
+}
+.kode-team-network li a {
+	padding: 5px 0px 0px; border: 1px solid rgb(230, 230, 230); border-image: none; width: 26px; height: 26px; text-align: center; color: rgb(153, 153, 153); display: inline-block;
+}
+.kode-team-list figure figcaption h2 {
+	text-align: right; text-transform: uppercase; margin-bottom: 15px; display: block; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-team-list figure figcaption h2 a {
+	padding: 14px 42px 15px; border: 4px solid rgb(51, 51, 51); border-image: none; color: rgb(255, 255, 255); display: inline-block; box-shadow: inset 0px 0px 0px 1px #fff; background-color: rgb(51, 51, 51);
+}
+.kode-team-list .kode-modren-btn {
+	padding: 5px 18px; font-size: 14px; float: right; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-team-network li a:hover {
+	color: rgb(255, 255, 255);
+}
+.kode-blog-player {
+	height: 601px;
+}
+.kode-blog-player .mejs-controls {
+	display: none;
+}
+.kode-blog-player .mejs-container {
+	height: 100% !important;
+}
+.kode-medium-blog {
+	padding: 35px; width: 100%; border-left-color: currentColor; border-left-width: 2px; border-left-style: solid; float: left; background-color: rgb(51, 51, 51);
+}
+.kode-medium-blog h2 {
+	color: rgb(255, 255, 255); text-transform: uppercase; margin-bottom: 25px;
+}
+.kode-medium-blog > ul > li {
+	list-style: none; margin: 0px 0px 20px; padding: 0px 0px 5px; width: 100%; border-bottom-color: rgb(72, 72, 72); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.kode-medium-blog > ul > li:last-child {
+	margin: 0px;
+}
+.medium-info {
+	width: 100%; margin-bottom: 14px; float: left;
+}
+.medium-info time {
+	padding: 12px 0px 0px; border: 4px solid rgb(255, 255, 255); border-image: none; width: 80px; height: 63px; text-align: center; color: rgb(51, 51, 51); font-size: 27px; font-weight: bold; float: left; box-shadow: inset 0px 0px 0px 1px #9f9f9f; background-color: rgb(255, 255, 255);
+}
+.medium-info time ~ .medium-title {
+	padding: 0px 0px 0px 100px;
+}
+.medium-title h5 a {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-blog-options {
+	margin: 0px;
+}
+.kode-blog-options li {
+	list-style: none; margin-right: 20px; display: inline-block;
+}
+.kode-blog-options li i {
+	margin-right: 6px;
+}
+.kode-medium-blog .kode-blog-options li a {
+	color: rgb(255, 255, 255);
+}
+.kode-medium-blog .kode-blog-options li {
+	color: rgb(255, 255, 255);
+}
+.kode-medium-blog p {
+	color: rgb(255, 255, 255);
+}
+.kode-services {
+	width: 100%; float: left;
+}
+.service-info {
+	width: 100%; float: left;
+}
+.kode-services ul li {
+	list-style: none; padding: 0px;
+}
+.service-info {
+	padding: 55px 10px; text-align: center; background-color: rgb(80, 80, 80);
+}
+.service-info i {
+	color: rgb(255, 255, 255); margin-bottom: 15px;
+}
+.service-info h2 {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-fixer-counter {
+	width: 100%; text-align: center; float: left;
+}
+.kode-fixer-title {
+	text-transform: uppercase; font-size: 48px;
+}
+.kode-fixer-counter h2 {
+	text-transform: uppercase; font-weight: lighter;
+}
+.is-countdown {
+	margin: 50px 0px 0px; display: inline-block;
+}
+.countdown-amount {
+	background: rgb(51, 51, 51); padding: 9px 0px 0px; width: 97px; height: 97px; text-align: center; color: rgb(255, 255, 255); font-size: 55px; font-weight: bold; margin-bottom: 15px; display: block; position: relative; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.countdown-amount::before {
+	left: 0px; top: -20px; border-top-color: red; border-right-color: transparent; border-top-width: 116px; border-right-width: 100px; border-top-style: solid; border-right-style: solid; position: absolute; z-index: 0; content: "";
+}
+.countdown-amount small {
+	position: relative;
+}
+.countdown-section {
+	margin-bottom: 30px; margin-left: 80px; display: inline-block;
+}
+.countdown-period {
+	color: rgb(80, 80, 80); text-transform: uppercase; font-size: 20px; font-weight: bold;
+}
+.kode-team-match {
+	width: 100%; text-align: center; float: left;
+}
+.kode-team-match ul {
+	margin-bottom: 35px; display: inline-block;
+}
+.kode-team-match ul li {
+	list-style: none; margin-left: 100px; float: left;
+}
+.kode-team-match ul li.home-kode-vs {
+	margin-top: 32px; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-team-match ul li:first-child {
+	margin-left: 0px;
+}
+:first-child.countdown-section {
+	margin-left: 0px;
+}
+.kode-team-match ul li .kode-modren-btn {
+	padding: 15px 12px; font-size: 42px;
+}
+.kode-subtitle {
+	width: 50%; font-size: 18px; display: inline-block;
+}
+.kode-table {
+	border-bottom-color: currentColor; border-bottom-width: 3px; border-bottom-style: solid; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-table tr:hover {
+	background: rgb(102, 102, 102) !important;
+}
+.kode-table thead th {
+	padding: 4px 10px; border: currentColor; border-image: none; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 16px;
+}
+.kode-table thead th:first-child {
+	text-align: left;
+}
+.kode-table tbody tr {
+	background-color: rgb(51, 51, 51);
+}
+.kode-table tbody tr:nth-child(2n) {
+	background-color: rgb(64, 64, 64);
+}
+.kode-table tbody tr:nth-child(2n) td {
+	border: currentColor; border-image: none;
+}
+.kode-table tbody tr td {
+	border-width: medium 1px medium medium; border-style: none solid none none; border-color: currentColor rgb(72, 72, 72) currentColor currentColor; padding: 3px 25px; border-image: none; color: rgb(255, 255, 255); vertical-align: middle;
+}
+.kode-table span {
+	width: 33%; text-align: center; font-size: 20px; font-weight: normal; display: inline-block;
+}
+.kode-table.kode-table-v2 tbody tr:nth-child(2n) {
+	background-color: rgb(51, 51, 51);
+}
+.kode-table.kode-table-v2 tbody tr td {
+	border: currentColor; border-image: none;
+}
+.kode-table.kode-table-v2 tbody tr td:first-child {
+	padding: 4px 0px 3px 15px; text-align: left;
+}
+.kode-table.kode-table-v2 tbody tr td {
+	padding: 3px 15px; text-align: center;
+}
+.kode-blog-list ul li {
+	list-style: none;
+}
+.kode-large-blog > ul > li {
+	margin-top: 90px; margin-bottom: 65px;
+}
+.kode-grid-blog > ul > li {
+	margin-top: 90px; margin-bottom: 65px;
+}
+.kode-fullwidth-blog > ul > li {
+	margin-top: 90px; margin-bottom: 65px;
+}
+.kode-time-zoon {
+	padding: 18px; width: 100%; float: left; position: relative; background-color: rgb(244, 244, 244);
+}
+.kode-time-zoon::before {
+	
+}
+.kode-large-blog ul li:hover .kode-time-zoon time {
+	color: rgb(255, 255, 255);
+}
+.kode-blog-list ul li:hover img {
+	opacity: 0.6;
+}
+.kode-time-zoon time {
+	padding: 10px 0px 6px; width: 79px; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 32px; margin-right: 18px; float: left; display: none; background-color: rgb(47, 47, 47);
+}
+.kode-time-zoon time span {
+	font-size: 18px; margin-top: 6px; display: block;
+}
+.kode-time-zoon h5 {
+	padding: 14px 0px 0px; text-align: center; text-transform: uppercase;
+}
+.kode-blog-list figure {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-blog-list figure img {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-blog-info {
+	padding: 20px 20px 0px; width: 100%; text-align: center; float: left; position: relative; background-color: rgb(244, 244, 244);
+}
+.kode-blog-info::before {
+	margin: auto; left: 0px; width: 42%; height: 14px; right: 0px; bottom: -14px; position: absolute; content: ""; background-color: rgb(244, 244, 244);
+}
+.kode-blog-info .kode-team-network {
+	margin: 18px 0px 0px; float: none; display: inline-block;
+}
+.kode-blog-btn {
+	text-transform: uppercase;
+}
+.kode-align-btn {
+	width: 100%; text-align: center; float: left;
+}
+.kode-grid-blog .kode-blog-options li {
+	margin-bottom: 12px;
+}
+.kode-grid-blog .kode-blog-options li a {
+	color: rgb(80, 80, 80);
+}
+.kode-grid-blog .kode-blog-info {
+	background-color: rgb(234, 234, 234);
+}
+.kode-grid-blog .kode-blog-info::before {
+	background-color: rgb(234, 234, 234);
+}
+.kode-grid-blog .kode-team-network li a {
+	background-color: rgb(255, 255, 255);
+}
+.kode-grid-blog .kode-blog-info::before {
+	border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: solid;
+}
+.kode-modrenbtn {
+	margin: 9px 0px 4px; padding: 5px 25px; border: 4px solid rgb(42, 42, 42); border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; display: inline-block; box-shadow: inset 0px 0px 0px 1px #ffffff; background-color: rgb(42, 42, 42);
+}
+.kode-fullwidth-blog > ul > li:last-child {
+	margin-bottom: 0px;
+}
+.kode-fullwidth-blog > ul > li:last-child .kode-blog-info {
+	border: currentColor; border-image: none; padding-bottom: 0px;
+}
+.kode-fullwidth-blog .kode-blog-info {
+	padding: 15px 0px 30px; text-align: left; border-bottom-color: rgb(209, 209, 209); border-bottom-width: 1px; border-bottom-style: solid; background-color: rgb(255, 255, 255);
+}
+.kode-fullwidth-blog .kode-blog-info::before {
+	display: none;
+}
+.kode-fullwidth-blog .kode-blog-options {
+	padding: 4px 0px 0px; float: left;
+}
+.kode-fullwidth-blog .kode-team-network {
+	margin: 3px 0px 0px; float: right;
+}
+.kode-fullwidth-blog p {
+	padding: 13px 0px 0px; float: left;
+}
+.kode-fullwidth-blog .kode-modrenbtn {
+	float: left;
+}
+.kode-fullwidth-blog .kode-time-zoon::before {
+	margin: 0px 0px 0px -100px; left: 50%; background-color: rgb(165, 165, 165);
+}
+.pagination {
+	width: 100%; text-align: center; float: left;
+}
+.pagination a {
+	padding: 5px 0px 0px; border: 1px solid rgb(215, 215, 215); border-image: none; width: 32px; height: 32px; color: rgb(153, 153, 153); margin-right: 6px; display: inline-block;
+}
+.pagination span {
+	padding: 5px 0px 0px; border: 1px solid rgb(215, 215, 215); border-image: none; width: 32px; height: 32px; color: rgb(153, 153, 153); margin-right: 6px; display: inline-block;
+}
+.pagination a:hover {
+	color: rgb(255, 255, 255);
+}
+.pagination span {
+	color: rgb(255, 255, 255);
+}
+.kode-editor {
+	width: 100%; float: left;
+}
+.kode-editor p {
+	margin: 14px 0px;
+}
+blockquote {
+	margin: 15px 0px; padding: 20px; width: 100%; color: rgb(102, 102, 102); font-size: 15px; font-style: italic; border-left-color: currentColor; border-left-width: 3px; border-left-style: solid; float: left; background-color: rgb(241, 241, 241);
+}
+.kode-related-blog ul li {
+	list-style: none; margin-bottom: 30px;
+}
+.related-thumb {
+	border-bottom-color: currentColor; border-bottom-width: 3px; border-bottom-style: solid;
+}
+.kode-related-blog {
+	width: 100%; float: left;
+}
+.related-thumb {
+	width: 100%; float: left;
+}
+.kode-related-blog ul li img {
+	width: 100%; float: left;
+}
+.related-text {
+	width: 100%; float: left;
+}
+.kode-related-blog ul li:hover img {
+	opacity: 0.6;
+}
+.related-text {
+	padding: 10px 0px 0px; text-align: center;
+}
+.related-text h6 a {
+	color: rgb(102, 102, 102); text-transform: uppercase;
+}
+.kode-postsection {
+	border-width: 1px medium; border-style: solid none; border-color: rgb(235, 235, 235) currentColor; padding: 25px 0px; border-image: none; width: 100%; margin-bottom: 30px; float: left;
+}
+.kode-postsection h6 {
+	margin: 0px; text-transform: uppercase;
+}
+.kode-postsection h6 a {
+	color: rgb(102, 102, 102);
+}
+.kode-postsection h6 i {
+	font-size: 34px;
+}
+.kode-prev {
+	float: left;
+}
+.kode-prev i {
+	margin: -5px 25px 0px 0px; float: left;
+}
+.kode-next {
+	float: right;
+}
+.kode-next i {
+	margin: -5px 0px 0px 25px; float: right;
+}
+.kode-admin-post {
+	margin: 36px 0px 30px; padding: 24px 75px; width: 100%; float: left; position: relative; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); background-color: rgb(51, 51, 51); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-admin-post::before {
+	left: 0px; top: -36px; border-top-color: rgb(235, 26, 26); border-right-color: transparent; border-top-width: 197px; border-right-width: 230px; border-top-style: solid; border-right-style: solid; position: absolute; content: "";
+}
+.kode-admin-post figure {
+	margin: 0px; border: 5px solid rgb(51, 51, 51); border-image: none; width: 110px; float: left;
+}
+.kode-admin-post figure ~ .admin-info {
+	padding: 0px 0px 0px 135px;
+}
+.admin-info p {
+	color: rgb(255, 255, 255);
+}
+.admin-info h5 {
+	text-transform: uppercase; margin-bottom: 0px;
+}
+.admin-info h5 span {
+	font-size: 14px; margin-left: 9px;
+}
+#kodecomments {
+	width: 100%; float: left;
+}
+#kodecomments ul ul {
+	margin: 0px;
+}
+#kodecomments ul li {
+	list-style: none; width: 100%; float: left;
+}
+#kodecomments > ul > li {
+	padding-bottom: 12px; margin-bottom: 25px; border-bottom-color: rgb(235, 235, 235); border-bottom-width: 1px; border-bottom-style: solid;
+}
+#kodecomments ul li figure {
+	padding: 5px; border: 1px solid rgb(212, 212, 212); border-image: none; float: left; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); background-color: rgb(241, 241, 241); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+#kodecomments ul li figure img {
+	border: 1px solid rgb(212, 212, 212); border-image: none;
+}
+#kodecomments ul li figure ~ .text {
+	padding: 0px 0px 0px 110px; width: auto; float: none;
+}
+#kodecomments ul li .text h6 {
+	margin: 0px;
+}
+#kodecomments ul li .text a {
+	float: left;
+}
+#kodecomments ul li .text .replay-btn {
+	margin: 0px 0px 0px 10px; float: none; display: inline-block;
+}
+#kodecomments ul li .text time {
+	color: rgb(181, 181, 181); text-transform: uppercase; font-size: 12px; margin-left: 8px;
+}
+#kodecomments ul li .text p {
+	margin-top: 8px;
+}
+#kodecomments ul li .text time i {
+	margin-right: 7px;
+}
+#kodecomments .children li {
+	margin-bottom: 0px;
+}
+#kodecomments .children > li {
+	padding: 0px 0px 0px 150px;
+}
+#kodecomments ul ul.children li {
+	padding-top: 25px; margin-top: 25px; border-top-color: rgb(235, 235, 235); border-top-width: 1px; border-top-style: solid;
+}
+#koderespond {
+	width: 100%; float: left;
+}
+#koderespond form {
+	width: 100%; float: left;
+}
+#koderespond form p.kd-textarea {
+	width: 100%; float: left;
+}
+#koderespond form p textarea {
+	width: 100%; float: left;
+}
+#koderespond h2 {
+	margin: 0px 0px 15px; text-transform: uppercase;
+}
+#koderespond form p {
+	margin: 0px; padding: 0px 25px 25px 0px; width: 33.33%; float: left;
+}
+#koderespond form p:nth-child(3n) {
+	padding-right: 0px;
+}
+#koderespond form p.kd-textarea {
+	padding-right: 0px;
+}
+#koderespond form input[type='text'] {
+	padding: 9px; border: 1px solid rgb(220, 220, 220); border-image: none; width: 100%; height: 40px; color: rgb(102, 102, 102); float: left;
+}
+#koderespond form input[type='text']:focus {
+	background-color: rgb(244, 244, 244);
+}
+#koderespond form p textarea:focus {
+	background-color: rgb(244, 244, 244);
+}
+#koderespond form p textarea {
+	padding: 9px; border: 1px solid rgb(220, 220, 220); border-image: none; height: 170px; color: rgb(102, 102, 102);
+}
+#koderespond form p input[type='button'] {
+	padding: 8px 25px; border: 6px solid currentColor; border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; float: left; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+}
+#koderespond form p input[type='submit'] {
+	padding: 8px 25px; border: 6px solid currentColor; border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; float: left; box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+}
+#koderespond form p.kd-button {
+	width: 100%;
+}
+.kode-testimonial {
+	margin: 30px 0px 0px;
+}
+.kode-testimonial figure {
+	width: 100%; float: left;
+}
+.kode-testimonial figure img {
+	width: 100%; float: left;
+}
+.kode-testimonial {
+	width: 100%; float: left;
+}
+.kode-testimonial figure {
+	padding: 16px 80px; background-color: rgb(51, 53, 55);
+}
+.kode-testimonial ul li {
+	list-style: none; margin-bottom: 55px;
+}
+.kode-testimonial ul li .thcolor {
+	color: rgb(255, 255, 255);
+}
+.kode-testimonial figure::before {
+	left: 0px; top: -35px; border-top-color: rgb(235, 26, 26); border-right-color: transparent; border-top-width: 194px; border-right-width: 270px; border-top-style: solid; border-right-style: solid; position: absolute; z-index: 0; content: "";
+}
+.kode-testimnl-thumb {
+	border: 4px solid rgb(51, 53, 55); border-image: none; width: 137px; float: left; position: relative;
+}
+.kode-testimnl-thumb ~ figcaption {
+	padding: 11px 0px 0px 162px;
+}
+.kode-testimonial figure figcaption p {
+	color: rgb(255, 255, 255);
+}
+.kode-partner ul li {
+	list-style: none; text-align: center; margin-bottom: 30px;
+}
+.kode-partner ul li a {
+	border: 1px solid rgb(226, 226, 226); border-image: none; width: 100%; float: left; box-shadow: 0px 2px 0px 0px #e2e2e2;
+}
+.kode-subheader {
+	width: 100%; height: 236px; float: left; position: relative; background-color: rgb(235, 26, 26);
+}
+.subheader-height::before {
+	top: 0px; width: 52.2%; height: 100%; right: 0px; position: absolute; content: ""; background-color: rgb(197, 0, 0);
+}
+.subheader-height::after {
+	right: 52.2%; bottom: 0px; border-bottom-color: rgb(197, 0, 0); border-left-color: transparent; border-bottom-width: 198px; border-left-width: 152px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+.subheader-height.kode-subheader {
+	padding: 165px 0px 0px;
+}
+.kode-subheader h1 {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-breadcrumb {
+	padding: 9px 0px 0px; float: right;
+}
+.kode-breadcrumb li {
+	list-style: none; padding: 0px 15px; display: inline-block; position: relative;
+}
+.kode-breadcrumb li::before {
+	top: 0px; right: -5px; color: rgb(255, 255, 255); font-family: FontAwesome; position: absolute; content: "\f101";
+}
+.kode-breadcrumb li:last-child {
+	padding-right: 0px;
+}
+.kode-breadcrumb li:last-child::before {
+	display: none;
+}
+.kode-breadcrumb li a {
+	color: rgb(255, 255, 255);
+}
+.kode-gallery ul li {
+	list-style: none; margin-bottom: 30px;
+}
+.kode-gallery ul li figure {
+	box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-gallery ul li figure {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-gallery ul li figure a {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-gallery ul li figure img {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-gallery ul li figure figcaption {
+	padding: 10px; left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; opacity: 0; transform: scale(0); -webkit-transform: scale(0); -o-transform: scale(0); -moz-transform: scale(0);
+}
+.kode-gallery ul li:hover figure figcaption {
+	opacity: 1; transform: scale(1); -webkit-transform: scale(1); -o-transform: scale(1); -moz-transform: scale(1);
+}
+.kode-gallery-info {
+	padding: 18px 25px; border: 1px solid rgb(222, 222, 222); border-image: none; width: 100%; float: left;
+}
+.kode-gallery-info h2 {
+	margin: 0px; text-transform: uppercase;
+}
+.kode-gallery-info p {
+	margin: 0px;
+}
+.kode-gallery-hover {
+	width: 100%; height: 100%; display: inline-block; opacity: 0.8;
+}
+.kode-gallery-hover i {
+	margin: -8px 0px 0px -2px; left: 50%; top: 50%; color: rgb(255, 255, 255); font-size: 28px; position: absolute;
+}
+.kode-player-thumb {
+	border: 1px solid rgb(216, 216, 216); border-image: none; width: 100%; float: left;
+}
+.kode-detail-element {
+	padding: 18px 0px 15px; width: 100%; margin-bottom: 20px; border-top-color: rgb(234, 234, 234); border-bottom-color: rgb(234, 234, 234); border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; float: left;
+}
+.kode-detail-element .kode-team-network {
+	margin: 0px;
+}
+.kode-detail-element h2 {
+	margin: 0px; text-transform: uppercase; display: inline-block;
+}
+.kode-table caption {
+	padding: 7px 20px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 24px;
+}
+.kode-player-tabs {
+	margin: 40px 0px 20px;
+}
+.kode-player-tabs {
+	width: 100%; float: left;
+}
+.player-nav {
+	width: 100%; float: left;
+}
+.kode-player-tabs .tab-content {
+	width: 100%; float: left;
+}
+.player-nav li {
+	list-style: none; line-height: 1; margin-left: 25px; float: left;
+}
+.player-nav li a {
+	border-width: 1px 1px medium; border-style: solid solid none; border-color: rgb(208, 208, 208) rgb(208, 208, 208) currentColor; padding: 14px 45px; border-image: none; text-transform: uppercase; font-size: 18px; float: left;
+}
+.kode-player-tabs .kode-table thead th {
+	padding: 4px 14px; font-size: 15px;
+}
+.kode-player-tabs .kode-table tbody tr td:nth-child(2n) {
+	background-color: rgb(64, 64, 64);
+}
+.kode-player-tabs .kode-table tbody tr:nth-child(2n) {
+	background-color: rgb(51, 51, 51);
+}
+.kode-player-tabs .kode-table tbody tr td {
+	border-width: medium medium 1px 1px; border-style: none none solid solid; border-color: currentColor currentColor rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2); border-image: none;
+}
+.kode-images {
+	width: 39%; float: left;
+}
+.kode-images ul {
+	width: 101px; float: left;
+}
+.kode-images ul li {
+	list-style: none; border: 1px solid rgb(217, 217, 217); border-image: none; width: 100%; margin-bottom: 15px; float: left;
+}
+.shopmainthumb {
+	border: 1px solid rgb(217, 217, 217); border-image: none; width: 70%; float: right;
+}
+.kode-summery {
+	width: 60%; padding-left: 20px; float: right;
+}
+.summery-title {
+	width: 100%; padding-bottom: 15px; margin-bottom: 25px; border-bottom-color: rgb(198, 198, 198); border-bottom-width: 1px; border-bottom-style: solid; float: left; position: relative;
+}
+.summery-title h2 {
+	margin: 0px; text-transform: uppercase; float: left;
+}
+.priceinfo {
+	padding: 25px 0px; width: 100%; margin-bottom: 20px; border-bottom-color: rgb(198, 198, 198); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.priceinfo h2 {
+	float: left;
+}
+.priceinfo ul {
+	width: 70%; float: left;
+}
+.priceinfo ul li {
+	list-style: none; width: 50%; padding-left: 25px; float: left;
+}
+.priceinfo ul li span {
+	padding: 6px 0px 0px; width: 25%; float: left;
+}
+.priceinfo ul li select {
+	width: 75%; float: left;
+}
+.kode-summery .kode-modren-btn {
+	width: auto; font-size: 20px; float: left;
+}
+.shop-btn {
+	float: left;
+}
+.shop-btn a {
+	margin: 0px 0px 0px 13px; padding: 16px 0px 0px; width: 46px; height: 46px; text-align: center; color: rgb(255, 255, 255); float: left; background-color: rgb(51, 51, 51);
+}
+.shop-btn a:hover {
+	color: rgb(255, 255, 255);
+}
+.shop-nav .tab-content {
+	padding: 25px; border: 1px solid rgb(222, 222, 222); border-image: none; width: 100%; float: left;
+}
+.shop-nav {
+	margin: 30px 0px 25px; padding: 0px 0px 40px; width: 100%; border-bottom-color: rgb(229, 229, 229); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.kode-rating {
+	top: 22px; width: 100px; height: 22px; right: 0px; line-height: 16px; padding-bottom: 10px; margin-right: 0px; position: absolute;
+}
+.kode-rating::before {
+	left: 0px; top: 0px; color: rgb(221, 221, 221); letter-spacing: 4px; font-family: "FontAwesome"; font-size: 16px; position: absolute; content: "\f005 \f005 \f005 \f005 \f005";
+}
+.rating-box::before {
+	left: 0px; top: 0px; color: rgb(221, 221, 221); letter-spacing: 4px; font-family: "FontAwesome"; font-size: 16px; position: absolute; content: "\f005 \f005 \f005 \f005 \f005";
+}
+.rating-box::before {
+	color: rgb(255, 174, 0);
+}
+.rating-box {
+	left: 0px; top: 0px; height: 16px; overflow: hidden; position: absolute;
+}
+.kode-inner-fixer {
+	padding: 45px 0px; width: 100%; margin-bottom: 30px; border-bottom-color: currentColor; border-bottom-width: 1px; border-bottom-style: solid; float: left; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); background-color: rgb(242, 242, 242); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-inner-fixer .kode-fixer-counter h2 {
+	padding: 15px 10px; color: rgb(255, 255, 255);
+}
+.kode-fixer-list {
+	width: 100%; display: table; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-fixer-list ul {
+	display: table-row;
+}
+.kode-fixer-list ul li {
+	vertical-align: middle; display: table-cell;
+}
+.table-head li {
+	padding: 15px 10px; width: 20%; text-align: center;
+}
+.table-head li:first-child {
+	width: 32%;
+}
+.table-head li h5 {
+	margin: 0px; color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.fixer-pagination a {
+	padding: 4px 0px 0px; border-radius: 2px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 26px; height: 26px; color: rgb(255, 255, 255); margin-right: 10px; float: right;
+}
+.fixer-pagination a:hover {
+	background-color: rgb(255, 255, 255);
+}
+:nth-child(2n).table-body li {
+	background-color: rgb(51, 51, 51);
+}
+:nth-child(2n).table-body li {
+	border-left-color: rgb(64, 64, 64); border-left-width: 1px; border-left-style: solid;
+}
+.table-body li {
+	padding: 25px 0px; text-align: center; color: rgb(255, 255, 255); background-color: rgb(64, 64, 64);
+}
+.list-thumb {
+	color: rgb(255, 255, 255); display: inline-block;
+}
+.list-thumb img {
+	margin-right: 8px;
+}
+.table-body li span {
+	width: 22%; font-size: 20px; display: inline-block;
+}
+.table-body li small {
+	text-transform: uppercase;
+}
+.fixer-btn a {
+	padding: 3px 14px; color: rgb(51, 51, 51); font-weight: bold; margin-right: 20px; float: right; background-color: rgb(255, 255, 255);
+}
+.table-body li.fixer-btn {
+	width: 26%;
+}
+.fixer-btn a:hover {
+	color: rgb(255, 255, 255);
+}
+.icon-list li {
+	list-style: none; padding: 3px 0px; color: rgb(102, 102, 102); border-bottom-color: rgb(236, 236, 236); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.icon-list li i {
+	margin-right: 10px;
+}
+.kode-team-timeline {
+	width: 100%; float: left; position: relative;
+}
+.kode-team-timeline ul {
+	margin: 0px 0px 0px -198px; position: relative;
+}
+.kode-team-timeline ul::before {
+	margin: 0px 0px 0px 98px; left: 50%; top: 0px; width: 2px; height: 94%; border-left-color: rgba(255, 255, 255, 0.25); border-left-width: 1px; border-left-style: solid; position: absolute; content: "";
+}
+.kode-team-timeline ul li {
+	list-style: none; margin: 0px -4px 40px 0px; padding: 0px 0px 0px 198px; width: 50%; display: inline-block; position: relative;
+}
+.timeline-inner {
+	padding: 22px 22px 15px; border: 1px solid rgb(98, 102, 108); border-image: none; position: relative; background-color: rgb(255, 255, 255);
+}
+.timeline-inner::before {
+	top: 32px; right: -16px; border-right-color: transparent; border-bottom-color: rgb(255, 255, 255); border-right-width: 25px; border-bottom-width: 25px; border-right-style: solid; border-bottom-style: solid; position: absolute; content: "";
+}
+.kode-team-timeline ul li:nth-child(2n) .timeline-inner::before {
+	left: -16px; right: auto; border-top-color: transparent; border-right-color: rgb(255, 255, 255); border-bottom-color: transparent; border-top-width: 25px; border-right-width: 25px; border-bottom-width: 0px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid;
+}
+.timeline-inner h2 {
+	text-transform: uppercase;
+}
+.kode-timezoon {
+	padding: 10px 0px 0px; border: 7px solid rgb(255, 255, 255); border-image: none; top: 31px; width: 85px; height: 66px; text-align: center; right: -21%; color: rgb(40, 40, 40); text-transform: uppercase; font-size: 22px; position: absolute; box-shadow: inset 0px 0px 0px 1px #cdcdcd; background-color: rgb(255, 255, 255);
+}
+.timeline-circle {
+	margin: 0px 0px 0px -8px; border-radius: 100%; left: 50%; top: -15px; width: 16px; height: 16px; position: absolute; background-color: rgb(255, 255, 255);
+}
+.bottom-circle {
+	top: auto; bottom: 28px;
+}
+.contactus-page {
+	width: 100%; margin-bottom: 20px; float: left;
+}
+.contactus-page .kode-forminfo h3 {
+	color: rgb(102, 102, 102);
+}
+.contactus-page .kode-forminfo p {
+	color: rgb(102, 102, 102);
+}
+.contactus-page .kode-form-list li strong {
+	color: rgb(102, 102, 102);
+}
+.contactus-page .kode-simple-form ul li input[type='text'] {
+	color: rgb(102, 102, 102);
+}
+.contactus-page .kode-simple-form ul li textarea {
+	color: rgb(102, 102, 102);
+}
+.contactus-page .kode-form-list li i {
+	border-color: rgb(196, 196, 196); color: rgb(102, 102, 102);
+}
+.contactus-page .kode-forminfo h3 {
+	margin: 0px 18px 0px 0px; float: left;
+}
+.kode-map {
+	border: 3px solid rgb(228, 228, 228); border-image: none; width: 100%; margin-bottom: 40px; float: left;
+}
+.contact-formtwo.kode-simple-form ul {
+	margin: 0px 0px 0px -28px;
+}
+.contact-formtwo.kode-simple-form ul li {
+	padding: 0px 0px 10px 28px; width: 33.33%;
+}
+.contact-formtwo.kode-simple-form ul li.full-column {
+	width: 100%;
+}
+.kode-plain-divider {
+	margin: 20px 0px 35px; width: 100%; float: left;
+}
+.kode-plain-divider span {
+	width: 100%; border-bottom-color: rgb(233, 233, 233); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.kode-404-page {
+	padding: 25px 0px 80px; width: 100%; text-align: center; float: left;
+}
+.kode-404-page h2 {
+	text-transform: uppercase; font-size: 40px;
+}
+.kode-404-page img {
+	margin-bottom: 40px;
+}
+.kode-404-page span {
+	margin-bottom: 15px; display: inline-block;
+}
+.kode-innersearch {
+	margin: 20px 0px 0px; width: 100%; float: left;
+}
+.kode-innersearch form {
+	width: 350px; display: inline-block; position: relative;
+}
+.kode-innersearch form input[type='text'] {
+	padding: 6px 20px; border: 1px solid rgb(212, 212, 212); border-image: none; width: 100%; height: 47px; color: rgb(0, 0, 0); font-size: 16px; float: left; box-shadow: 0px 2px 0px 0px #d4d4d4;
+}
+.kode-innersearch form label {
+	margin: 0px; top: 0px; height: 100%; right: 0px; position: absolute;
+}
+.kode-innersearch form label::before {
+	top: 16px; right: 15px; color: rgb(153, 153, 153); font-family: FontAwesome; position: absolute; cursor: pointer; content: "\f002";
+}
+.kode-innersearch form input[type='submit'] {
+	background: none; border: currentColor; border-image: none; width: 45px; height: 48px; float: right;
+}
+.kode-underconstruction {
+	width: 100%; text-align: center; float: left;
+}
+.kode-underconstruction h2 {
+	color: rgb(255, 255, 255); text-transform: uppercase; font-size: 60px;
+}
+.kode-underconstruction span.kode-subtitle {
+	color: rgb(255, 255, 255); font-size: 19px; margin-bottom: 20px;
+}
+.kode-underconstruction .countdown-period {
+	color: rgb(255, 255, 255);
+}
+.kode-underconstruction .kode-innersearch form input[type='text'] {
+	background: rgba(255, 255, 255, 0.1); border: currentColor; border-image: none; box-shadow: 0px 2px 0px 0px rgba(255,255,255,0.1);
+}
+.kode-newslatter {
+	padding: 30px 0px; width: 100%; float: left; position: relative;
+}
+.kode-newslatter h3 {
+	margin: 0px; color: rgb(255, 255, 255); padding-right: 20px; font-size: 36px; font-weight: 300; float: left;
+}
+.kode-newslatter form {
+	width: 100%; padding-left: 20px; vertical-align: middle; display: inline-block; position: relative;
+}
+.kode-newslatter form input[type='text'] {
+	background: none; padding: 5px 15px; border: 1px solid rgb(255, 255, 255); border-image: none; width: 100%; height: 50px; color: rgb(255, 255, 255); font-size: 16px; font-style: italic;
+}
+.kode-newslatter form label {
+	margin: 0px; top: 0px; right: 0px; position: absolute;
+}
+.kode-newslatter form label::before {
+	top: 12px; right: 20px; color: rgb(255, 255, 255); font-family: FontAwesome; font-size: 25px; position: absolute; cursor: pointer; content: "\f1d8";
+}
+.kode-newslatter form input[type='submit'] {
+	background: none; border: currentColor; border-image: none; width: 50px; height: 50px;
+}
+.kode-halfbg {
+	top: 0px; width: 50%; height: 100%; right: 0px; position: absolute;
+}
+#contact-footer {
+	background: url("extra-images/footer-bg.jpg"); padding: 40px 0px; width: 100%; float: left;
+}
+.kode-simple-form {
+	width: 100%; float: left;
+}
+.kode-simple-form ul li {
+	list-style: none; width: 100%; margin-bottom: 15px; float: left;
+}
+.kode-simple-form ul li input[type='text'] {
+	padding: 6px 20px; border: 1px solid rgb(196, 196, 196); border-image: none; width: 100%; height: 43px; color: rgb(255, 255, 255); float: left; background-color: rgba(255, 255, 255, 0.1);
+}
+.kode-simple-form ul li textarea {
+	padding: 6px 20px; border: 1px solid rgb(196, 196, 196); border-image: none; width: 100%; height: 43px; color: rgb(255, 255, 255); float: left; background-color: rgba(255, 255, 255, 0.1);
+}
+.kode-simple-form ul li textarea {
+	height: 155px;
+}
+.kode-simple-form ul li input[type='submit'] {
+	padding: 10px 40px; border: 7px solid currentColor; border-image: none; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 24px; margin-top: 15px; float: left; box-shadow: inset 0px 0px 0px 1px #f48686;
+}
+.kode-forminfo h3 {
+	text-transform: uppercase;
+}
+.kode-forminfo h3 {
+	color: rgb(0, 0, 0);
+}
+.kode-forminfo p {
+	color: rgb(0, 0, 0);
+}
+.kode-form-list li strong {
+	color: rgb(0, 0, 0);
+}
+.kode-form-list li {
+	list-style: none; color: rgb(0, 0, 0); margin-bottom: 5px;
+}
+.kode-form-list li i {
+	padding: 5px 0px 0px; border: 1px solid rgb(0, 0, 0); border-image: none; width: 32px; height: 32px; text-align: center; font-size: 18px; margin-right: 20px; display: inline-block; box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-form-list li p {
+	width: auto; display: inline-block;
+}
+.kode-forminfo .kode-team-network {
+	float: left;
+}
+.kode-form-list {
+	width: 100%; float: left;
+}
+.kode-forminfo {
+	padding: 0px 15px; width: 100%; float: left;
+}
+.kode-bottom-footer {
+	width: 100%; float: left;
+}
+.kode-bottom-footer p {
+	margin: 0px; padding: 12px 0px; color: rgb(255, 255, 255);
+}
+#kode-topbtn {
+	padding: 3px 0px 0px; width: 40px; height: 40px; text-align: center; color: rgb(0, 0, 0); font-size: 20px; margin-top: -10px; float: right; position: relative;
+}
+#kode-topbtn::before {
+	left: -6px; top: -1px; border-bottom-color: rgb(201, 176, 5); border-left-color: transparent; border-bottom-width: 11px; border-left-width: 6px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+#kode-topbtn::after {
+	left: -6px; top: -1px; border-bottom-color: rgb(201, 176, 5); border-left-color: transparent; border-bottom-width: 11px; border-left-width: 6px; border-bottom-style: solid; border-left-style: solid; position: absolute; content: "";
+}
+#kode-topbtn::after {
+	left: auto; right: -6px; transform: scaleX(-1); -webkit-transform: scaleX(-1); -o-transform: scaleX(-1); -moz-transform: scaleX(-1);
+}
+.project-fact {
+	padding: 50px 0px; width: 100%; float: left;
+}
+.project-numbering {
+	text-align: center;
+}
+.project-numbering i {
+	color: rgb(255, 255, 255); font-size: 50px;
+}
+.project-numbering p {
+	color: rgb(255, 255, 255); text-transform: uppercase; font-weight: bold;
+}
+.project-numbering .counter {
+	color: rgb(255, 255, 255); font-family: "Lato", sans-serif; font-size: 60px; font-weight: bold;
+}
+.kode-table tbody tr td.subtit {
+	background: rgb(204, 204, 204); padding: 20px; text-align: center; color: black; font-size: 16px; font-weight: bold;
+}
+.header-8 {
+	padding: 25px 0px; transition:0.3s ease-in-out; width: 100%; text-align: center; float: left; background-color: rgba(0, 0, 0, 0.6);
+}
+.kf_sticky .header-8 {
+	padding: 10px 0px;
+}
+.header-8 .kode-navigation ul li a {
+	text-align: left;
+}
+.header-8 .logo {
+	margin: 0px auto;
+}
+.kode-navigation ul > li.last ul {
+	left: auto; right: 0px;
+}
+.header-8 .left.kode-navigation {
+	float: left;
+}
+.header-8 .right.kode-navigation {
+	float: right;
+}
+.logo {
+	float: left;
+}
+.logo a {
+	display: block;
+}
+.logo img {
+	border-radius: 5px; float: left; opacity: 0.75; -moz-opacity: 0.75; -khtml-opacity: 0.75;
+}
+.kode-navigation {
+	float: right;
+}
+.kode-navigation ul {
+	list-style: none; margin: 0px; padding: 0px; width: 100%; float: left;
+}
+.kode-navigation ul li {
+	list-style: none; float: left; position: relative;
+}
+.kode-navigation ul li a {
+	padding: 19px 16px; color: rgb(241, 215, 178); text-transform: uppercase; font-size: 14px; font-weight: bold; text-decoration: none; display: block; text-shadow: 1px 1px 0px #000;
+}
+.kode-navigation ul li > a:hover {
+	color: rgb(255, 255, 255);
+}
+.kode-navigation ul ul {
+	margin: 20px 0px 0px; transition:0.3s ease-in-out; left: 0px; top: 100%; width: 210px; float: left; visibility: hidden; position: absolute; z-index: 10; opacity: 0; box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1); background-color: rgba(0, 0, 0, 0.8); -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1); -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.kode-navigation ul li:hover > ul {
+	margin: 0px; display: block; visibility: visible; opacity: 1;
+}
+.kode-navigation ul ul li {
+	width: 100%;
+}
+.kode-navigation ul ul li a {
+	padding: 8px 20px; text-transform: capitalize; font-weight: normal;
+}
+.kode-navigation ul ul li a:hover {
+	color: rgb(255, 255, 255);
+}
+.kode-navigation ul ul ul {
+	left: 100%; top: 0px;
+}
+.kode-social-network {
+	margin: 0px 0px 0px 20px; float: right;
+}
+.kode-social-network ul {
+	list-style: none; margin: 4px 0px; width: 100%; float: left;
+}
+.kode-social-network ul li {
+	list-style: none; margin: 0px 5px; float: left;
+}
+.kode-social-network ul li a {
+	padding: 4px 0px; border-radius: 100%; transition:0.3s ease-in-out; width: 33px; height: 33px; text-align: center; color: rgb(104, 104, 104); font-size: 14px; display: block; background-color: rgb(229, 229, 229); -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;
+}
+.kode-social-network ul li a:hover {
+	color: rgb(255, 255, 255); background-color: rgb(0, 0, 0);
+}
+.pick-event {
+	padding: 20px 0px; float: left; background-color: rgb(237, 237, 237);
+}
+.pick-event .heading {
+	width: 20%; text-align: left; float: left;
+}
+.pick-event .heading h4 {
+	margin: 5px 0px; color: rgb(52, 52, 52); font-family: "Raleway", sans-serif; font-size: 16px;
+}
+.pick-event .heading h2 {
+	margin: 6px 0px; text-transform: uppercase; font-family: "Raleway", sans-serif; font-size: 20px; font-weight: bold;
+}
+.pick-event .form {
+	width: 80%; float: left;
+}
+.pick-event .form input {
+	padding: 10px; border: currentColor; border-image: none; width: 100%; min-height: 42px; background-color: rgb(255, 255, 255);
+}
+.pick-event .form .cover {
+	padding: 0px 10px; width: 25%; float: left; position: relative;
+}
+.pick-event .form .cover .dropdown-menu li {
+	list-style: none;
+}
+.pick-event .form .cover .thbg-colortwo.kode-modren-btn {
+	padding: 0px 10px; width: 100%; text-align: center; font-size: 18px;
+}
+.pick-event .form .cover i {
+	top: 13px; right: 20px; color: rgb(187, 187, 187); position: absolute;
+}
+.pick-event .form div:first-child.cover {
+	margin-left: 0px;
+}
+.pick-event .form button.find {
+	padding: 5px 20px; border: currentColor; border-image: none; text-align: center; color: rgb(255, 255, 255); text-transform: uppercase; font-family: "Lato", sans-serif; font-size: 14px; font-weight: bold; display: block; min-height: 42px;
+}
+.pick-event .cover .dropdown button {
+	padding: 10px; border: currentColor; border-image: none; width: 100%; text-align: left; min-height: 42px; background-color: rgb(255, 255, 255);
+}
+.pick-event .cover .dropdown .dropdown-menu {
+	width: 100%;
+}
+.kode-sport-section {
+	background-position: center; padding: 50px 0px; width: 100%; text-align: center; float: left; position: relative; background-image: url("extra-images/bg-paralaxx-1.jpg"); background-repeat: no-repeat; background-size: cover;
+}
+.kode-sport-section::before {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; content: ""; background-color: rgba(255, 255, 255, 0.7);
+}
+.kode-video-section {
+	background-position: center; padding: 150px 0px; width: 100%; text-align: center; float: left; position: relative; background-image: url("extra-images/slide3.jpg"); background-repeat: no-repeat; background-size: cover;
+}
+.kode-video-section::before {
+	left: 0px; top: 0px; width: 100%; height: 100%; position: absolute; content: ""; background-color: rgba(0, 0, 0, 0.7);
+}
+.kode-video-section .container {
+	position: relative;
+}
+.kode-video-section h2 {
+	margin: 0px 0px 30px; color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: 10px; font-size: 34px;
+}
+.kode-video-section h4 {
+	color: rgb(255, 255, 255); text-transform: uppercase; letter-spacing: 5px; font-size: 18px;
+}
+.kode-video-section p {
+	color: rgb(255, 255, 255); text-transform: uppercase;
+}
+.kode-video-section i {
+	margin: 0px 0px 20px; padding: 15px 0px; border-radius: 4px; border: 2px solid rgb(255, 255, 255); border-image: none; width: 62px; height: 62px; text-align: center; color: rgb(255, 255, 255); font-size: 24px; background-color: rgba(255, 255, 255, 0.2);
+}
+.heading-12 {
+	position: relative;
+}
+.heading-12 h2 {
+	margin: 0px 0px 15px; padding: 0px 0px 20px; text-transform: uppercase; font-weight: bold; display: inline-block; position: relative;
+}
+.heading-12 h2::before {
+	margin: auto; left: 0px; width: 150px; height: 2px; right: 0px; bottom: 0px; border-bottom-color: rgb(183, 183, 183); border-bottom-width: 1px; border-bottom-style: dashed; position: absolute; content: "";
+}
+.heading-12 p {
+	margin: 0px; color: rgb(148, 148, 148); text-transform: uppercase; font-family: "Open Sans", sans-serif; font-size: 14px;
+}
+.heading-12 span.left {
+	border-radius: 100%; left: 27%; width: 9px; height: 9px; bottom: -4px; position: absolute; background-color: rgb(219, 45, 20);
+}
+.heading-12 span.right {
+	border-radius: 100%; left: 27%; width: 9px; height: 9px; bottom: -4px; position: absolute; background-color: rgb(219, 45, 20);
+}
+.heading-12 span.right {
+	left: auto; right: 27%;
+}
+.heading {
+	width: 100%; text-align: center; float: left;
+}
+.heading h2 {
+	color: rgb(0, 0, 0); font-family: "Open Sans", sans-serif; font-size: 33px; position: relative;
+}
+.footer-medium {
+	width: 100%; float: left;
+}
+#footer1 .footer-medium h3 {
+	color: rgb(37, 37, 37); text-transform: uppercase; font-size: 20px; font-weight: 700;
+}
+#footer1 .footer-medium {
+	padding: 50px 0px;
+}
+.about-widget p {
+	margin: 17px 0px 0px;
+}
+.newsletter-widget {
+	width: 100%; float: left;
+}
+.newsletter-widget p {
+	margin: 0px 0px 17px;
+}
+.newsletter-widget form {
+	width: 100%; height: 40px; float: left; position: relative;
+}
+.newsletter-widget form [type='text'] {
+	border-width: 1px 0px 1px 1px; border-style: solid none solid solid; border-color: rgb(218, 218, 218) currentColor rgb(218, 218, 218) rgb(218, 218, 218); padding: 11px 15px; border-image: none; width: 100%; color: rgb(120, 120, 120); text-transform: uppercase; font-size: 13px; float: left; background-color: transparent;
+}
+.newsletter-widget form [type='submit'] {
+	padding: 11px 13px; border: currentColor; border-image: none; top: 0px; right: 0px; color: rgb(255, 255, 255); text-transform: uppercase; font-size: 15px; font-weight: 700; position: absolute;
+}
+.contact-us-widget {
+	width: 100%; float: left;
+}
+.contact-us-widget p {
+	margin: 0px 0px 17px;
+}
+.social-links1 li {
+	margin: 0px 10px 0px 0px; display: inline-block;
+}
+.social-links1 li:last-child {
+	margin: 0px;
+}
+.social-links1 li a {
+	padding: 3px 0px; width: 35px; height: 35px; text-align: center; color: rgb(255, 255, 255); overflow: hidden; font-size: 16px; display: block; position: relative; z-index: 11; box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.social-links1 li a::before {
+	left: 0px; top: -100%; width: 100%; height: 100%; position: absolute; content: ""; background-color: rgba(0, 0, 0, 0.2);
+}
+.social-links1 li a:hover::before {
+	top: 0px;
+}
+.fb-bg1 {
+	background-color: rgb(59, 89, 151);
+}
+.tw-bg1 {
+	background-color: rgb(0, 172, 235);
+}
+.youtube-bg1 {
+	background-color: rgb(186, 2, 4);
+}
+.linkedin-bg1 {
+	background-color: rgb(81, 130, 170);
+}
+.widget-flickr ul {
+	margin: 0px; width: 100%; float: left;
+}
+.widget-flickr ul li {
+	margin: 0px 3px 10px; float: left; box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+.widget-flickr ul li img {
+	border-radius: 3px;
+}
+.kode-table tr:hover {
+	transition:0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out;
+}
+.owl-carousel-team .owl-item:hover .team-info {
+	background-color: rgb(51, 51, 51);
+}
+.team-info {
+	padding: 28px 22px 22px; text-align: center; position: relative; background-color: rgb(255, 255, 255);
+}
+.team-info h2 {
+	margin: 0px 0px 4px; text-transform: uppercase; line-height: 1; font-weight: 500;
+}
+.team-info h2 a {
+	color: rgb(119, 119, 119);
+}
+.team-info h6 {
+	color: rgb(119, 119, 119);
+}
+.team-info p {
+	color: rgb(119, 119, 119);
+}
+.team-info p {
+	margin: 0px;
+}
+.owl-carousel-team .owl-item:hover .team-network {
+	margin: 0px; left: 0px; color: rgb(255, 255, 255); opacity: 1; background-color: rgb(51, 51, 51);
+}
+.owl-carousel-team .owl-item:hover .team-network ul li a {
+	color: rgb(255, 255, 255);
+}
+.team-network {
+	top: 50%; width: 100%; float: left;
+}
+.team-network ul {
+	margin: 0px; display: inline-block;
+}
+.team-network ul li {
+	list-style: none; margin: 18px 0px 0px 18px; line-height: 1; float: left;
+}
+.team-network ul li:first-child {
+	margin-left: 0px;
+}
+.team-network ul li a {
+	color: rgb(51, 51, 51); font-size: 20px;
+}
+.kode-team-grid ul li:hover p {
+	color: rgb(255, 255, 255);
+}
+.kode-testimonials-6 {
+	width: 100%; float: left; position: relative;
+}
+.kode-testimonials-6::before {
+	margin: auto; padding: 5px; left: 0px; top: -25px; width: 50px; height: 50px; text-align: center; right: 0px; color: rgb(125, 189, 34); font-family: FontAwesome; font-size: 40px; position: absolute; z-index: 10; content: "\f10d"; background-color: rgb(255, 255, 255);
+}
+.kode-testimonials-6 ul {
+	margin: 0px; width: 100%; float: left;
+}
+.kode-testimonials-6 .bx-wrapper {
+	
+}
+.kode-testimonials-6 .kode-text {
+	margin: 0px 0px 60px; padding: 40px 40px 90px; border: 1px solid rgb(238, 238, 238); border-image: none; width: 100%; text-align: center; float: left; position: relative; box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.3); -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.kode-testimonials-6 .kode-text p {
+	margin: 0px; color: rgb(102, 102, 102); font-size: 20px; font-weight: 300;
+}
+.kode-testimonials-6 .kode-thumb {
+	border: 14px solid rgb(255, 255, 255); border-image: none; width: 90px; height: 90px; display: inline-block; box-shadow: 0px 0px 0px 1px rgba(0,0,0,0.1); -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1); -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+}
+.kode-testimonials-6 .client-name {
+	margin: auto; left: 0px; width: 15%; right: 0px; bottom: -50px; position: absolute;
+}
+.kode-testimonials-6 .client-name h4 {
+	color: rgb(125, 189, 34); font-size: 14px; font-weight: bold; margin-bottom: 10px;
+}
+.kode-testimonials-6 .bx-wrapper .bx-controls-direction a {
+	left: -14px; margin-top: -36px; background-color: rgb(255, 255, 255);
+}
+.kode-testimonials-6 .bx-wrapper .bx-controls-direction a.bx-next {
+	left: auto; right: -14px;
+}
+.kode-testimonials-6 .bx-wrapper .bx-controls-direction a::before {
+	left: 0px; width: 100%; text-align: center; color: rgb(125, 189, 34); line-height: 30px; font-family: FontAwesome; font-size: 40px; position: absolute; content: "\f104";
+}
+.kode-testimonials-6 .bx-wrapper .bxslider > li {
+	padding: 0px 30px;
+}
+.kode-testimonials-6 .bx-wrapper .bx-controls-direction a.bx-next::before {
+	content: "\f105";
+}
+.kode-testimonials-3 .bx-pager {
+	display: none;
+}
+.header-4 {
+	width: 100%; float: left; background-color: rgba(0, 0, 0, 0.6);
+}
+.header-4 .kode-top-strip {
+	padding: 5px 0px; width: 100%; text-align: center; border-bottom-color: rgb(204, 204, 204); border-bottom-width: 1px; border-bottom-style: solid; float: left;
+}
+.header-4 .logo {
+	margin: 0px 20px 0px 0px; width: 170px; height: 90px; position: relative;
+}
+.header-4 .logo img {
+	margin: auto; left: 0px; top: 0px; bottom: 0px; position: absolute;
+}
+.header-4 .kode-navigation ul li a {
+	padding: 35px 16px;
+}
+.header-4 .kode-navigation ul li:hover > a {
+	color: rgb(255, 255, 255);
+}
+.header-4 .kode-navigation ul ul li a {
+	padding: 10px 16px;
+}
+.header-4 .logo {
+	float: left;
+}
+.header-4 .logo a {
+	display: block;
+}
+.logo img {
+	float: left;
+}
+.header-4 .kode-navigation {
+	float: left;
+}
+.header-4 .kode-top-search {
+	margin: 25px 0px; float: right; position: relative;
+}
+.header-4 .kode-top-search input[type='text'] {
+	padding: 6px 10px; border: 1px solid rgb(204, 204, 204); border-image: none; width: 300px; height: 40px; float: left;
+}
+.header-4 .kode-top-search input[type='text']:focus {
+	
+}
+.header-4 .kode-top-search i {
+	padding: 10px 0px; top: 0px; width: 40px; height: 40px; text-align: center; right: 0px; color: rgb(0, 0, 0); font-size: 16px; position: absolute;
+}
+.header-4 .kode-top-search {
+	margin: 29px 0px; float: right; position: relative;
+}
+.header-4 .kode-top-search input[type='text'] {
+	background: rgba(0, 0, 0, 0.3); border-width: medium medium 1px; border-style: none none solid; border-color: currentColor currentColor rgb(0, 0, 0); padding: 6px 10px; width: 300px; height: 40px; float: left;
+}
+.header-4 .kode-top-search input[type='text']:focus {
+	
+}
+.header-4 .kode-top-search i {
+	padding: 10px 0px; top: 0px; height: 40px; text-align: center; right: 0px; color: rgb(255, 255, 255); font-size: 18px; position: absolute;
+}
+.header-6 {
+	width: 100%; float: left; background-color: rgba(0, 0, 0, 0.3);
+}
+.header-6 .kode-nav-container {
+	padding: 25px 0px; width: 100%; float: left;
+}
+.header-6 .logo {
+	margin: 0px; width: auto; float: left;
+}
+.header-6 .logo a.logo {
+	margin: 0px; padding: 0px;
+}
+.header-6 .logo a {
+	display: block;
+}
+.header-6 .logo img {
+	float: left;
+}
+.header-6 .kode-navigation {
+	margin-top: 6px; float: right;
+}
+.header-6 .kode-social-network {
+	margin-top: 6px;
+}
+.padding-none {
+	padding: 0px 0px 50px;
+}
+section {
+	width: 100%; float: left;
+}
+.kd-counter {
+	width: 100%; float: left;
+}
+.kd-counter ul li {
+	list-style: none; text-align: center;
+}
+.kd-counter ul li i {
+	margin: 0px 0px 18px; color: rgb(255, 255, 255);
+}
+.kd-counter ul li span {
+	padding: 0px 0px 16px; color: rgb(255, 255, 255); font-size: 50px; font-weight: bold; margin-bottom: 5px; display: block; position: relative;
+}
+.kd-counter ul li span::before {
+	margin: 0px 0px 0px -40px; left: 50%; width: 80px; height: 3px; bottom: 0px; border-bottom-color: rgb(255, 255, 255); border-bottom-width: 2px; border-bottom-style: solid; position: absolute; content: "";
+}
+.kd-counter ul li small {
+	color: rgb(255, 255, 255); text-transform: uppercase; font-size: 16px;
+}
+.widget {
+	width: 100%; float: left;
+}
+.kode-team-modern.kode-team-list figure figcaption {
+	left: 0px;
+}
+.kode-team-modern.kode-team-list figure figcaption h2 {
+	text-align: center;
+}
+.kode-team-modern.kode-team-list .kode-team-thumb {
+	width: 100%;
+}
+.kode-team-modern.kode-team-list .kode-team-network li {
+	background: rgb(255, 255, 255);
+}
+.kode-team-modern.kode-team-list .kode-team-network {
+	margin: 10px 0px; text-align: center; float: none;
+}
+.kode-team-modern.kode-team-list .kode-modren-btn {
+	display: none;
+}
+.kode-small.kode-team-modern.kode-team-list figure figcaption h2 a {
+	padding: 10px; font-size: 18px;
+}
+.kode-team-modern.kode-team-list figure figcaption h2 {
+	box-shadow: inherit;
+}
+.kode-team-modern.kode-team-list > ul > li.col-md-5 {
+	margin: 0px auto; text-align: center; float: none; display: inline-block;
+}
+.kode-align-center {
+	text-align: center;
+}
