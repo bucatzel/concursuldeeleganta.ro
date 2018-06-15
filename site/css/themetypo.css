@@ -299,7 +299,7 @@ audio, video {
 	position:fixed;
 	left:0;
 	top:0;
-	z-index:10000;
+	z-index:999;
 }
 .kode-wrapper .kode-header-absolute.kf_sticky  .kode-topbar{
 	display:none;
@@ -463,3 +463,11 @@ audio, video {
 .kode-wrap-boxed .eccaption{top:40%;}
 .kode-wrap-boxed .main-content{background:#fff;}
 .kode-wrap-boxed {background:#fff;width: 1200px; margin: 0 auto; margin-top: 40px; margin-bottom: 40px; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);position:relative;}
+
+.kode-matches-gallery .col-sm-4 {
+	height: 255px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+}

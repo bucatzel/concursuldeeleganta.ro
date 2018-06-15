@@ -502,6 +502,15 @@
 		padding:4px 3px;
 		text-align:center;
 	}
+	
+	.kode-matches-gallery .col-sm-4 {
+	height: auto;
+    margin-bottom: 20px;
+    overflow: visible;
+    display: inline-block;
+    position: relative;
+}
+	
 }
 
 /*============ Media 300Px Star ============ */
