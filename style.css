@@ -8,10 +8,6 @@
 
 /*MENIU PRINCIPAL */
 
-.kode-navigation ul li:last-child {
-	display: none !important;
-}
-
 /* TopBaar Starts */
 .pull-left {display:none;}
 .kode-topbar { display:none;
